@@ -52,6 +52,12 @@ TARGET_SUPPORTS_64_BIT_APPS := true
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+PRODUCT_COPY_FILES += \
+    device/oneplus/guacamoleb/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.columbus.use_ap_sensor=false
+
 # Maintainer
 PIXELAGE_MAINTAINER := Quince
 
