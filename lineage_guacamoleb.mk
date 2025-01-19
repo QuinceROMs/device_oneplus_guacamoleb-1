@@ -30,3 +30,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus7 \
     SystemDevice=OnePlus7 \
     SystemName=OnePlus7
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_MAINTAINER="Quince"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 855" \
+    RisingMaintainer="Quince"

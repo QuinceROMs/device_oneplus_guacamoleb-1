@@ -32,20 +32,21 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
 
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# RisingOS package type
+RISING_PACKAGE_TYPE := GAPPS
 
-# Blur properties
-TARGET_USES_BLUR := true
+# GApps
+WITH_GMS := true
 
-# UDFPS Icons
-EXTRA_UDFPS_ICONS := true
+# Blur
+TARGET_ENABLE_BLUR := true
 
-# Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
+# Include camera
+PRODUCT_NO_CAMERA := false
 
-# Derp versioning
-DERP_VERSION_APPEND_TIME_OF_DAY := true
+# Launcher
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
