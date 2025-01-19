@@ -60,7 +60,7 @@ PRODUCT_PACKAGES += \
 
 # AlertSlider
 PRODUCT_PACKAGES += \
-    SystemUIOverlay \
+    SystemUIOverlay2 \
     AlertSliderOverlay
 
 # Shipping API
