@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-pixelage
 
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
@@ -44,7 +44,7 @@ PRODUCT_PACKAGES += \
 
 # AlertSlider
 PRODUCT_PACKAGES += \
-    MistSystemUIOverlay \
+    PixelageSystemUIOverlay \
     AlertSliderOverlay
 
 # Shipping API
