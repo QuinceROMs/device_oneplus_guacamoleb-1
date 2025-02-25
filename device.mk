@@ -32,6 +32,9 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_SUPPORTS_GFU := false
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Aperture
 PRODUCT_NO_CAMERA := false
 
