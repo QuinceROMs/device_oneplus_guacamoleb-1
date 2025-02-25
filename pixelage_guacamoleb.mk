@@ -15,16 +15,6 @@ $(call inherit-product, device/oneplus/guacamoleb/device.mk)
 # Inherit some common Project Pixelage stuff.
 $(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
 
-# MistOs Flags
-MISTOS_MAINTAINER := HARISH
-TARGET_ENABLE_BLUR := true
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
-WITH_GMS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-TARGET_HAS_UDFPS := true
-EXTRA_UDFPS_ANIMATIONS := true
-MIST_BUILD_TYPE := OFFICIAL
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := pixelage_guacamoleb
 PRODUCT_DEVICE := guacamoleb

@@ -17,6 +17,7 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2240
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device init scripts
 PRODUCT_PACKAGES += \
@@ -31,6 +32,25 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 # GooglePhotos
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+
+# Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# arcore
+TARGET_INCLUDE_STOCK_ARCORE := true
+
+# AIcore
+TARGET_INCLUDE_STOCK_AICORE := false
+
+# Live Wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+
+# Maintainer
+PIXELAGE_MAINTAINER := Quince
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
