@@ -33,24 +33,17 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
 
-# Recorder
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
-# arcore
-TARGET_INCLUDE_STOCK_ARCORE := true
-
-# AIcore
-TARGET_INCLUDE_STOCK_AICORE := false
-
-# Live Wallpapers
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+# GAPPS
+TARGET_STOCK_GAPPS := true
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_64_BIT_APPS := true
 
-# Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
+# Udfps
+TARGET_HAS_UDFPS :=true
+
+# UDFPS animations
+EXTRA_UDFPS_ANIMATIONS := true
 
 PRODUCT_COPY_FILES += \
     device/oneplus/guacamoleb/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
@@ -58,12 +51,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.columbus.use_ap_sensor=false
 
-# Maintainer
-PIXELAGE_MAINTAINER := Quince
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-pixelage
+    $(LOCAL_PATH)/overlay-bliss
 
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
@@ -73,7 +63,7 @@ PRODUCT_PACKAGES += \
 
 # AlertSlider
 PRODUCT_PACKAGES += \
-    PixelageSystemUIOverlay \
+    BlissROMsSystemUIOverlay \
     AlertSliderOverlay
 
 # Shipping API

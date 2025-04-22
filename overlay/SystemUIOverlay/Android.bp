@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "PixelageSystemUIOverlay",
+    name: "BlissROMsSystemUIOverlay",
     product_specific: true,
 }
