@@ -33,8 +33,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=OnePlus7
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_MAINTAINER="Quince"
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingChipset="Snapdragon 855" \
     RisingMaintainer="Quince"
