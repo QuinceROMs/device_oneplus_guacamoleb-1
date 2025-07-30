@@ -33,21 +33,18 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
 
-# Recorder
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+# Aperture
+PRODUCT_NO_CAMERA := true
 
-# arcore
-TARGET_INCLUDE_STOCK_ARCORE := true
+# Blur
+TARGET_ENABLE_BLUR := true
 
-# AIcore
-TARGET_INCLUDE_STOCK_AICORE := false
-
-# Live Wallpapers
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-
-# Face Unlock
+# AOSP Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_SUPPORTS_GFU := false
+
+# GApps
+WITH_GMS := true
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -58,12 +55,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.columbus.use_ap_sensor=false
 
-# Maintainer
-PIXELAGE_MAINTAINER := Quince
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-pixelage
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
@@ -73,7 +67,7 @@ PRODUCT_PACKAGES += \
 
 # AlertSlider
 PRODUCT_PACKAGES += \
-    PixelageSystemUIOverlay \
+    RisingSystemUIOverlay \
     AlertSliderOverlay
 
 # NoCutout

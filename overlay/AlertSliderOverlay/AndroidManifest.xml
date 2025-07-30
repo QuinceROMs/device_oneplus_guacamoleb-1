@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.pixelage.alertslider.overlay">
+    package="org.rising.alertslider.overlay">
 
     <application android:hasCode="false"/>
 
