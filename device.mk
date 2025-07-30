@@ -46,15 +46,6 @@ TARGET_SUPPORTS_GFU := false
 # GApps
 WITH_GMS := true
 
-# Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
-
-PRODUCT_COPY_FILES += \
-    device/oneplus/guacamoleb/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.columbus.use_ap_sensor=false
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
