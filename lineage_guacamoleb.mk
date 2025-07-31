@@ -12,18 +12,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from guacamoleb device
 $(call inherit-product, device/oneplus/guacamoleb/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common RisingOS Revived stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# MistOs Flags
-MISTOS_MAINTAINER := HARISH
-TARGET_ENABLE_BLUR := true
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
-WITH_GMS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-TARGET_HAS_UDFPS := true
-EXTRA_UDFPS_ANIMATIONS := true
-MIST_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_guacamoleb
@@ -41,3 +31,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus7 \
     SystemDevice=OnePlus7 \
     SystemName=OnePlus7
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 855" \
+    RisingMaintainer="Quince"

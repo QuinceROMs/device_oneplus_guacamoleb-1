@@ -28,6 +28,19 @@ PRODUCT_COPY_FILES += \
 # Fastboot
 TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 
+# AOSP Face Unlock
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_SUPPORTS_GFU := false
+
+# Aperture
+PRODUCT_NO_CAMERA := false
+
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# GApps
+WITH_GMS := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
@@ -40,7 +53,7 @@ PRODUCT_PACKAGES += \
 
 # AlertSlider
 PRODUCT_PACKAGES += \
-    MistSystemUIOverlay \
+    RisingSystemUIOverlay \
     AlertSliderOverlay
 
 # Shipping API
