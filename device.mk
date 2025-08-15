@@ -44,6 +44,13 @@ TARGET_ENABLE_BLUR := true
 # GApps
 WITH_GMS := true
 
+# Launcher3
+TARGET_DEFAULT_PIXEL_LAUNCHER = false
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.default_launcher=0 \
+    persist.sys.quickswitch_pixel_shipped=1
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
