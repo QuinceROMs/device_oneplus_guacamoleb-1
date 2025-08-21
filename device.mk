@@ -41,6 +41,9 @@ PRODUCT_NO_CAMERA := false
 # Blur
 TARGET_ENABLE_BLUR := true
 
+# Udfps
+TARGET_HAS_UDFPS := true
+
 # GApps
 WITH_GMS := true
 
