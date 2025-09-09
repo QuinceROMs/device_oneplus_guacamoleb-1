@@ -44,6 +44,9 @@ TARGET_ENABLE_BLUR := true
 # GApps
 WITH_GMS := true
 
+# Pixel Launcher
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
