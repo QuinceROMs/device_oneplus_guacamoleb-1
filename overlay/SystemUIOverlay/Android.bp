@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "RisingSystemUIOverlay",
+    name: "EvolutionSystemUIOverlay",
     product_specific: true,
 }

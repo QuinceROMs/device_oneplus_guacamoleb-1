@@ -30,13 +30,18 @@ TARGET_BOARD_FASTBOOT_INFO_FILE := $(LOCAL_PATH)/fastboot-info.txt
 
 # AOSP Face Unlock
 TARGET_SUPPORTS_64_BIT_APPS := true
-TARGET_SUPPORTS_GFU := false
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# DeviceAsWebcam
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+
 # Aperture
-PRODUCT_NO_CAMERA := false
+TARGET_BUILD_APERTURE_CAMERA := false
+
+# AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
 
 # Blur
 TARGET_ENABLE_BLUR := true
@@ -46,9 +51,6 @@ TARGET_HAS_UDFPS := true
 
 # GApps
 WITH_GMS := true
-
-# Pixel Launcher
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -62,7 +64,7 @@ PRODUCT_PACKAGES += \
 
 # AlertSlider
 PRODUCT_PACKAGES += \
-    RisingSystemUIOverlay \
+    EvolutionSystemUIOverlay \
     AlertSliderOverlay
 
 # Shipping API
