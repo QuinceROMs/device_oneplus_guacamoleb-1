@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := YouTube Ornament PersonalSafety GoogleFeedback Maps Drive Photos VoiceAccessPrebuilt Twelve Recorder Glimpse
+LOCAL_OVERRIDES_PACKAGES := Accord YouTube Maps Drive Ornament Velvet Gmail2 PersonalSafety FossifyGallery FilesGoogle Chrome64 MusicFX Drive EmergencyInfoGms GoogleFeedback WellbeingPrebuilt Photos VoiceAccessPrebuilt Twelve Recorder Glimpse
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
