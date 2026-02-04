@@ -2280,6 +2280,10 @@
         <path name="compress-voip-call bt-sco" />
     </path>
 
+    <path name="compress-voip-call bt-sco-swb">
+        <path name="compress-voip-call bt-sco" />
+    </path>
+
     <path name="compress-voip-call afe-proxy">
         <ctl name="AFE_PCM_RX_Voice Mixer Voip" value="1" />
         <ctl name="Voip_Tx Mixer AFE_PCM_TX_Voip" value="1" />
